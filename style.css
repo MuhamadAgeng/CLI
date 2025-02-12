@@ -9,7 +9,7 @@ html, body{
     --font-size: 1rem;
   }
 body{
-    background-image: url('/images/bgimg.jpeg');
+    background-image: url('images/bgimg.jpeg');
     margin: 0;
     font-size: 14px;
     color: #e7eef0;
