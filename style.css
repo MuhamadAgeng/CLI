@@ -80,6 +80,8 @@ header img{
     color: white;
     font-size: 24px;
     font-weight: bold;
+    text-shadow: 2px 2px 10px gold;
+    animation: flicker 1s infinite alternate;
 }
 .isi {
     font-family: "Poppins", serif;
@@ -87,8 +89,23 @@ header img{
     font-style: normal
 }
 ul {
+    border: 20px solid transparent;
+    border-radius: 5px; /* Membuat sudut sedikit melengkung */
+    background-color: #1a1a1a; /* Warna latar belakang */
+    width: fit-content; /* Menyesuaikan lebar dengan konten */
     list-style: none; /* Hilangkan bullet bawaan */
-    padding: 0;
+    padding: 10px;
+    margin: 10px;
+    background-image: url('images/text.jpg');
+    background-size: cover;
+    border-radius: 15px; /* Membuat ujung lebih halus */
+    box-shadow: inset -5px -5px 10px gold,
+              inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+    color: white; /* Warna teks */
+}
+ul ::before {
+    background: url('images/text.jpg');
+    mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8), transparent)
 }
 
 ul li {
@@ -359,6 +376,24 @@ a{
     }
 }
 
+@keyframes flicker {
+    0% { opacity: 1; text-shadow: 2px 2px 10px var(--clr-neon); }
+    50% { opacity: 0.8; text-shadow: 2px 2px 15px gold; }
+    100% { opacity: 1; text-shadow: 2px 2px 5px var(--clr-neon); }
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0px 0px 5px rgba(255, 215, 0, 1),
+                   0px 0px 10px rgba(255, 215, 0, 0.8);
+    }
+    to {
+      text-shadow: 0px 0px 10px rgba(255, 215, 0, 1),
+                   0px 0px 15px rgba(255, 215, 0, 0.8),
+                   0px 0px 20px rgba(255, 215, 0, 0.6);
+    }
+  }
+
 
 @media screen and (max-width: 767px) {
     .banner .content h1{
@@ -375,7 +410,7 @@ a{
     }
     .banner .image{
         width: 80%;
-        height: 650px;
+        height: 450px;
         margin-top: -25%;
         background-image: none;
         position: relative;
@@ -383,8 +418,9 @@ a{
     }
     .banner .image img{
         position: absolute;
-        height: 100%;
+        height: auto;
         left: 50%;
+        margin-top: 50px;
         width: 95%;
         transform: translateX(-50%);
         bottom: 0px;
@@ -411,5 +447,9 @@ a{
     }
     .grid-3{
         font-size: large;
+    }
+    .foot {
+    padding-bottom: 10px; /* Jarak ekstra di bawah */
+    margin-bottom: 10px;
     }
 }
