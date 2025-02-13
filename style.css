@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Odibee+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sacramento&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet');
 html, body{
     scroll-behavior: smooth;
 }
@@ -9,7 +10,7 @@ html, body{
     --font-size: 1rem;
   }
 body{
-    background-image: url('images/bgimg.jpeg');
+    background-image: url('images/Com.png');
     margin: 0;
     font-size: 14px;
     color: #e7eef0;
@@ -67,6 +68,41 @@ header img{
     left: 50%;
     transform: translateX(-50%);
     bottom: 0px;
+}
+.tema {
+    font-family: "Fredericka the Great", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    height: 100vh; /* Buat tinggi penuh layar */
+    background-color: none; /* Sesuaikan dengan latar belakang gambar */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.isi {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal
+}
+ul {
+    list-style: none; /* Hilangkan bullet bawaan */
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 25px; /* Beri jarak untuk icon bullet */
+    margin-bottom: 8px;
+}
+
+ul li::before {
+    content: "✔"; /* Gunakan ikon checklist sebagai bullet */
+    position: absolute;
+    left: 0;
+    color: gold;
+    font-weight: bold;
 }
 .grid figure img{
     width: 100%;

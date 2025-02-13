@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CLI</title>
-    <iframe
-      src="musik/audio.mp3"
-      allow="autoplay"
-      style="display: none"
-      id="iframeAudio"
-    ></iframe>
+    <audio id="player" autoplay loop>
+      <source src="musik/pubg.mp3" type="audio/mp3">
+    </audio>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -31,7 +28,10 @@
         <figure>
           <img src="images/3.png" alt="" class="autoRotate" />
         </figure>
-        <h2 class="autoShow">OPEN MEMBER</h2>
+        <div class="tema">
+          <h2 class="autoShow">OPEN MEMBER</h2>
+          <img src="images/8.png" class="autoShow" style="width: 80px; height: auto; margin-top: -20px;">
+        </div>
       </section>
       <section class="grid grid-2">
         <div class="autoShow">
@@ -47,21 +47,29 @@
               Syarat dan Ketentuan
             </h3>
           </figure>
-          <div class="isi" style="line-height: 1.6">
-            <li>- Clan aktif dengan 1 team aktif</li>
-            <li>
-              - Wajib mengikuti kegiatan yang diselenggarakan oleh komunitas
-            </li>
-            <li>- Iuran bulanan Rp.10.000.-untuk clan mix</li>
-            <li>- Iuran bulanan Rp.10.000.-untuk clan ladies</li>
-            <li>- Memasang logo CLI disetiap poster Event Clan</li>
+          <div class="isi" style="line-height: 1.6 font-family: 'Poppins', serif;" >
+            <ul>
+              <li>Clan aktif dengan 1 team aktif</li>
+              <li>Wajib mengikuti kegiatan yang diselenggarakan oleh komunitas
+              </li>
+              <li>Iuran bulanan Rp.10.000.-untuk clan mix</li>
+              <li>Iuran bulanan Rp.10.000.-untuk clan ladies</li>
+              <li>Memasang logo CLI disetiap poster Event Clan</li>
+            </ul>
           </div>
         </div>
         <div class="autoShow">
           <section class="grid grid-1">
+            <figure>
+              <img src="images/sich.png" alt="" />
+            </figure>
+            <figure>
+              <img src="images/3.png" alt="" class="autoRotate" />
+            </figure>
             <h3
               style="
                 text-align: center;
+                margin-top: 120px;
                 line-height: 1.5;
                 color: rgb(214, 168, 15);
                 font-family: 'Fredericka the Great', serif;
@@ -71,85 +79,98 @@
             </h3>
           </section>
         </div>
-        <div class="autoBLur">
-          <figure style="margin-top: -110px">
+        <div class="autoShow">
+          <figure style="margin-top: -50px">
             <img src="Icon/even1.png" alt="" />
           </figure>
           <h2 style="margin-top: -120px; text-align: center">Event Rutin</h2>
-          <p>
-            Event yang diadakan berupa tournament untuk team man\mix & ladies
-            antara anggota komunitas. Guna mengasah skill, dengan hadiah berupa
-            uang tunai.
-          </p>
+          <div class="isi">
+            <p>
+              Event yang diadakan berupa tournament untuk team man\mix & ladies
+              antara anggota komunitas. Guna mengasah skill, dengan hadiah berupa
+              uang tunai.
+            </p>
+          </div>
         </div>
         <div class="autoBLur">
-          <figure style="margin-top: 65px; margin-left: 150px; width: 220px">
+          <figure style="margin-top: 65px; margin-left: 65px; width: 220px">
             <img src="Icon/organis1.png" alt="" />
           </figure>
           <h2 style="margin-top: -10px; text-align: center">
             Pertemuan Bulanan
           </h2>
-          <p>
-            Pertemuan bulanan, guna menjalin keakraban dan saling berdiskusi
-            terkait perkembangan clan di dunia Gaming.
-          </p>
+          <div class="isi">
+            <p>
+              Pertemuan bulanan, guna menjalin keakraban dan saling berdiskusi
+              terkait perkembangan clan di dunia Gaming.
+            </p>
+          </div>
         </div>
-        <div class="autoBLur" style="margin-top: -110px">
+        <div class="autoBLur" style="margin-top: -70px">
           <figure>
             <img src="Icon/bkrjasma.png" alt="" />
           </figure>
-          <p style="margin-top: -110px; text-align: center">
-            Saling bekerja sama antar clan.
-          </p>
+          <div class="isi">
+            <p style="margin-top: -70px; text-align: center">
+              Saling bekerja sama antar clan.
+            </p>
+          </div>
         </div>
         <div class="autoBLur" style="margin-top: -20px">
           <figure>
             <img src="Icon/konksi1.png" alt="" />
           </figure>
-          <p style="margin-top: -35px; text-align: center">
-            Menambah koneksi dengan clan lain.
-          </p>
+          <div class="isi">
+            <p style="margin-top: -35px; text-align: center">
+              Menambah koneksi dengan clan lain.
+            </p>
+          </div>
         </div>
         <div
           class="autoBLur"
           style="margin-top: 30px; margin-left: 95px; width: 240px"
         >
-          <figure>
+          <figure style="margin-left: -30px; width: 220px;">
             <img src="Icon/saran1.png" alt="" />
           </figure>
-          <p style="margin-top: 0px; text-align: center">
-            Saran terhadap permasalahan.
-          </p>
+          <div class="isi">
+            <p style="margin-top: 0px; margin-left: -10px;">
+              Saran terhadap permasalahan.
+            </p>
+          </div>
         </div>
         <div
           class="autoBLur"
           style="margin-top: 30px; margin-left: 95px; width: 240px"
         >
-          <figure>
+          <figure style="margin-left: -30px; width: 220px;">
             <img src="Icon/ltihan1.png" alt="" />
           </figure>
-          <p style="margin-top: 0px; text-align: center">
-            Latihan bergengsi berhadiah.
-          </p>
+          <div class="isi">
+            <p style="margin-top: 0px; margin-left: -10px;">
+              Latihan bergengsi berhadiah.
+            </p>
+          </div>
         </div>
         <div
           class="autoBLur"
           style="margin-top: 30px; margin-left: 95px; width: 240px"
         >
-          <figure>
+          <figure style="margin-left: -30px; width: 220px;">
             <img src="Icon/promosi1.png" alt="" />
           </figure>
-          <p style="margin-top: 0px; text-align: center">
-            Event clan dipromosikan.
-          </p>
+          <div class="isi">
+            <p style="margin-top: 0px; margin-left: -10px;">
+              Event clan dipromosikan.
+            </p>
+          </div>
         </div>
       </section>
-
       <section class="grid grid-3">
-        <div class="autoShow">Info Lanjut : 081319035740 &#8599;</div>
+        <div class="autoShow" style="text-align: center;">Info Lanjut : 081319035740 &#8599;</div>
       </section>
     </main>
-    <div>
+    <div class="" style="margin-left: -50px;">
       <a class="neon" href="">JOIN NOW</a>
           <figure style="width: 10%;">
             <img src="images/MAIN LOGO - CLI - YELLOW.png" alt="" style="width: 90%;"/>
